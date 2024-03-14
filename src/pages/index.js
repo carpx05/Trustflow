@@ -118,8 +118,11 @@ export default function Login() {
               <Link href="/" className="text-xs mt-2 hover:underline">
                 Forget Password?
               </Link>
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div className="flex items-center border border-gray-500 rounded-md font-poppins mt-6 px-4">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-4">
+                <div className="col-span-2 font-poppins font-bold">
+                  For testing use these credentials
+                </div>
+                <div className="flex items-center border border-gray-500 rounded-md font-poppins px-4">
                   <Image
                     src={accountnum}
                     alt="accountnum"
@@ -127,9 +130,19 @@ export default function Login() {
                   />
                   <p>123456789123</p>
                 </div>
-                <div className="flex items-center border border-gray-500 rounded-md font-poppins mt-6 px-4">
+                <div className="flex items-center border border-gray-500 rounded-md font-poppins px-4">
                   <Image src={lock} alt="password" className="h-4 w-4 mr-2" />
                   <p>password1</p>
+                </div>
+                <div
+                  className="flex items-center font-poppins font-bold text-blue hover:underline"
+                  onClick={() =>
+                    (window.location.href =
+                      "https://bmf-bucket.s3.ap-south-1.amazonaws.com/InShot_20240314_185517507.mp4")
+                  }
+                >
+                  <FaRegPlayCircle className="w-6 h-6 mr-2" />
+                  <Link href="">Watch Demo</Link>
                 </div>
               </div>
             </div>
