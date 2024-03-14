@@ -4,7 +4,7 @@ import Link from "next/link";
 import kyc from "../../assets/kycDone.svg";
 export default function KycDone() {
   return (
-    <section className="w-full flex flex-col-reverse sm:flex-row justify-between items-center px-4 md:px-8 lg:px-16 xl:px-20 h-[90vh] pb-10">
+    <section className="w-full flex flex-col-reverse sm:flex-row justify-between items-center px-4 md:px-8 lg:px-16 xl:px-20 h-[90vh] pb-10 ">
       <div className="flex flex-col justify-start items-start gap-0">
         <h2 className="text-4xl md:text-6xl font-semibold text-Text-Black font-inter">
           KYC Complete
