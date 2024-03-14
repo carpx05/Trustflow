@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { logo, accountnum, lock } from "../assets";
 import Credentials from "@/components/CredentialComponent";
+import { FaRegPlayCircle } from "react-icons/fa";
 
 export default function Login() {
   const [accountNumber, setAccountNumber] = useState("");
